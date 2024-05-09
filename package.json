@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@vercel/analytics": "^1.2.2",
     "dotenv": "^16.4.5",
     "gray-matter": "^4.0.3",
     "markdown-to-jsx": "^7.4.7",
