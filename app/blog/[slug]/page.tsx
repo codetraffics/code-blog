@@ -22,17 +22,6 @@ export const generateStaticParams = async () => {
   return posts.map((post) => ({ slug: post.slug }));
 };
 
-// export const generateMetaData = async ({
-//   params,
-// }: {
-//   params: { slug: string };
-// }) => {
-//   const id = params?.slug ? "." + params?.slug : "";
-//   return {
-//     title: `Code-Blog ${id.replaceAll("_", " ")}`,
-//   };
-// };
-
 export async function generateMetadata({ params }: BlogPostPageProps) {
   const id = params?.slug ? " ⋅ " + params?.slug : "";
   const desc = params?.bio ? params?.bio : "";
